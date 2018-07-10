@@ -19,35 +19,49 @@
 				width: 80px;
 			}
 
+			label{
+				color:blue;
+			}
+		
+
 		</style>
+
+
    <body>
 
-
-
-<form action="/run" method="POST">
-	<div class="form-group"> 
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<textarea class="form-control" rows="30" type="text" placeholder="start writing html here" name="html"></textarea>
+<div class="">
+	<form action="/" method="POST" style="margin-top:10px;" id="form-submit">
+		<div class="form-group"> 
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<label for="html">HTML</label>
+					<textarea class="form-control" rows="15" type="text" placeholder="start writing html here" name="html"><%=html%></textarea>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<label for="css">CSS</label>
+					<textarea class="form-control" rows="15" placeholder="start writing css here" name="css"><%=css%></textarea>
+						
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<label for="javascript">JAVASCRIPT</label>
+					<textarea class="form-control" rows="15" placeholder="start writing javascript here" name="javascript"><%=javascript%></textarea>
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<textarea class="form-control" rows="30" placeholder="start writing css here" name="css"></textarea>
-					
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<textarea class="form-control" rows="30" placeholder="start writing javascript here" name="javascript"></textarea>
-			</div>
+			
+		
+		
+		<button class="btn btn-primary" type="submit">run</button>
 
 		</div>
-		
-	
-	
-	<button class="btn btn-primary" type="submit">run</button>
-
-	</div>
-</form>
-
-
+	</form>
+</div>
+<div class="editor">
+	<style><%-css%></style>
+	<%-html%>
+</div>
+<script><%-javascript%></script>
+<!-- <script src="/ajax.js"></script>
+ -->
 
 
 

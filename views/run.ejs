@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
    <head>
     <title>editor</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,3 +29,26 @@
 	<script>
 		<%- js %>
 	</script>
+
+
+	<form action="/" method="POST" style="margin-top:10px;" id="form-submit">
+					<div class="form-group"> 
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<label for="html">HTML</label>
+								<textarea class="form-control" value="${data.html}" rows="15" type="text" placeholder="start writing html here" name="html"><%=html%></textarea>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<label for="css">CSS</label>
+								<textarea class="form-control" value="${data.css}" rows="15" placeholder="start writing css here" name="css"><%=css%></textarea>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+								<label for="javascript">JAVASCRIPT</label>
+								<textarea class="form-control" value="${data.javascript}" rows="15" placeholder="start writing javascript here" name="javascript"><%=javascript%></textarea>
+							</div>
+						</div>
+						<button class="btn btn-primary" type="submit">run</button>
+
+					</div>
+				</form>
+ -->

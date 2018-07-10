@@ -4,7 +4,7 @@ var app               = express();
 var bodyParser        = require("body-parser");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(express.static('public'));
 
 
 
@@ -15,17 +15,13 @@ app.get("/",(req,res)=>{
 	res.render("home",{html,css,javascript})
 })
 
-// app.get("/run",(req,res)=>{
-	
-// 	res.render("run")
-// })
 
 
-app.post("/run",(req,res)=>{
+app.post("/",(req,res)=>{
 	var html = req.body.html;
 	var css  = req.body.css;
-	var js   = req.body.javascript;
-	res.render("run",{html:html,css:css,js:js})
+	var javascript   = req.body.javascript;
+	res.render("home",{html:html,css:css,javascript:javascript})
 })
 
 app.listen(3000, function() {
