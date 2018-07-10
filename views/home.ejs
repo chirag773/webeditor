@@ -1,0 +1,55 @@
+<html lang="en">
+   <head>
+    <title>editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+
+
+		  <style>
+			
+			button{
+				height: 40px;
+				width: 80px;
+			}
+
+		</style>
+   <body>
+
+
+
+<form action="/run" method="POST">
+	<div class="form-group"> 
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<textarea class="form-control" rows="30" type="text" placeholder="start writing html here" name="html"></textarea>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<textarea class="form-control" rows="30" placeholder="start writing css here" name="css"></textarea>
+					
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<textarea class="form-control" rows="30" placeholder="start writing javascript here" name="javascript"></textarea>
+			</div>
+
+		</div>
+		
+	
+	
+	<button class="btn btn-primary" type="submit">run</button>
+
+	</div>
+</form>
+
+
+
+
+
+
+
